@@ -26,36 +26,39 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <motion.div className="mt-15 p-2 md:my-15 md:px-30 w-full mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-white font-mono text-lg tracking-tight">
+        <Link
+          href="/"
+          className="text-white hover:text-[#06eecb] transition-all duration-1000"
+        >
           <SiCodeblocks size={32} />
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex space-x-8 text-md font-medium text-gray-400">
+        <motion.div className="hidden md:flex space-x-8 text-md font-medium text-white transition-all">
           {filteredLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-white transition-colors"
+              className="hover:text-[#06eecb] transition-all duration-1000"
             >
               {link.label}
             </Link>
           ))}
-        </div>
+        </motion.div>
 
         {/* Hamburger menu */}
-        <div className="md:hidden text-white text-2xl">
+        <motion.div className="md:hidden text-white text-2xl">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <HiX /> : <HiMenu />}
           </button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Mobile dropdown */}
       {isOpen && (
-        <div className="md:hidden mt-4 flex flex-col space-y-4 px-2">
+        <motion.div className="md:hidden mt-4 flex flex-col space-y-4 px-2 transition-all duration-300">
           {filteredLinks.map((link) => (
             <Link
               key={link.href}
@@ -66,7 +69,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-        </div>
+        </motion.div>
       )}
     </motion.nav>
   );

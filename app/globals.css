@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+/* [#06eecb] */
+
+body {
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url("/low-poly-grid-haikei.svg");
+  background-color: black;
+}
+
+.glow-text {
+  text-shadow: 0 0 8px #06eecb, 0 0 16px #06eecb;
+}

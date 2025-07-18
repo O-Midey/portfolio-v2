@@ -1,54 +1,88 @@
 "use client";
-import { motion } from "motion/react";
-import "./globals.css";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Twitter, Instagram, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-black px-4">
+    <main className="  w-full md:max-w-[75%] mx-auto overflow-hidden">
       <motion.div
-        className="text-center max-w-4xl"
+        className="mt-20 px-2 md:px-20 max-w-5xl mx-auto"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.8 }}
       >
-        <h1 className="text-gray-400 text-sm md:text-base tracking-widest uppercase mb-4">
+        <motion.h1 className="text-gray-300 text-sm md:text-base tracking-widest uppercase mb-4">
           Hi, my name is
-        </h1>
-
-        <h2 className="text-white text-4xl md:text-6xl font-light leading-tight mb-4">
-          Mide —<span className="text-blue-500"> Frontend Developer</span>
+        </motion.h1>
+        <br />
+        <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-6">
+          Omotosho Ayomide
         </h2>
-
-        <p className="text-gray-400 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
-          I build clean, interactive and responsive web experiences using tools
-          like
-          <span className="text-white"> React</span>,{" "}
-          <span className="text-white">Next.js</span>, and{" "}
-          <span className="text-white">TypeScript</span>.
+        <br />
+        <p className="text-gray-300 text-base md:text-lg leading-relaxed ">
+          I’m a frontend developer who turns complex ideas into clean,
+          responsive interfaces using{" "}
+          <span className="text-[#06eecb]">React</span>,{" "}
+          <span className="text-[#06eecb]">Next.js</span>, and{" "}
+          <span className="text-[#06eecb]">Typescript</span>. When I’m not
+          debugging pixels, you’ll probably find me obsessing over music
+          releases or brainstorming wild ideas for marketing rollouts. I like my
+          UIs like I like my playlists — smooth, engaging, and impossible to
+          skip.
         </p>
-      </motion.div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="mt-16 animate-bounce text-gray-600"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={1.5}
+        <Link
+          href="/about"
+          className="group inline-flex items-center text-gray-300 my-10 animate-pulse hover:text-[#06eecb] duration-200 transition-all"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19 9l-7 7-7-7"
+          See more about me
+          <ArrowRight
+            className="ml-2 transition-transform  space-x-6 "
+            size={18}
           />
-        </svg>
+        </Link>
+        <div className="flex gap-10 mt-12">
+          <Link
+            href="https://github.com/o-midey"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github
+              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
+              size={24}
+            />
+          </Link>
+          <Link
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin
+              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
+              size={24}
+            />
+          </Link>
+          <Link
+            href="https://twitter.com/meeedzy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter
+              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
+              size={24}
+            />
+          </Link>
+          <Link
+            href="https://instagram.com/thismidey"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram
+              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
+              size={24}
+            />
+          </Link>
+        </div>
       </motion.div>
     </main>
   );
