@@ -17,7 +17,7 @@ export default function Home() {
         </motion.h1>
         <br />
         <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-6">
-          Omotosho Ayomide
+          Omotosho David A.
         </h2>
         <br />
         <p className="text-gray-300 text-base md:text-lg leading-relaxed ">
