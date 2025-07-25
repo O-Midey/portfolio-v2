@@ -26,7 +26,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
     >
-      <motion.div className="mt-15 p-2 md:my-15 md:px-30 w-full mx-auto flex items-center justify-between">
+      <motion.div className="mt-6 p-2 md:my-15 md:px-30 w-full mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"

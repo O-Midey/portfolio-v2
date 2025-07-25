@@ -41,4 +41,12 @@ export const projects: Project[] = [
     technologies: ["React"],
     projectLink: "https://shopping-cart-zeta-one.vercel.app/",
   },
+  {
+    id: 5,
+    title: "E-Commerce Website",
+    description: "A multipurpose online shopping store",
+    src: "https://res.cloudinary.com/daypv7q8r/image/upload/v1752805292/Screenshot_2025-07-18_at_03.16.51_peieza.png",
+    technologies: ["Next.JS", "Zustand", "Tailwind CSS"],
+    projectLink: "https://shop-luxe-theta.vercel.app/",
+  },
 ];

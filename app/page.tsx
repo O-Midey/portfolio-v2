@@ -26,10 +26,9 @@ export default function Home() {
           <span className="text-[#06eecb]">React</span>,{" "}
           <span className="text-[#06eecb]">Next.js</span>, and{" "}
           <span className="text-[#06eecb]">Typescript</span>. When I’m not
-          debugging pixels, you’ll probably find me obsessing over music
-          releases or brainstorming wild ideas for marketing rollouts. I like my
-          UIs like I like my playlists — smooth, engaging, and impossible to
-          skip.
+          debugging codes, you’ll probably find me obsessing over music releases
+          or brainstorming wild ideas for marketing rollouts. I like my UIs just
+          like my playlists; smooth, engaging, and impossible to skip.
         </p>
         <Link
           href="/about"
@@ -41,7 +40,7 @@ export default function Home() {
             size={18}
           />
         </Link>
-        <div className="flex gap-10 mt-12">
+        <div className="flex gap-10 mt-5 md:mt-12">
           <Link
             href="https://github.com/o-midey"
             target="_blank"

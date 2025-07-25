@@ -11,12 +11,12 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Let's Connect.
+        Let`&apos;`s Connect.
       </motion.h1>
 
       <p className="text-gray-400 mb-10">
         Got a project in mind, a question, or just want to vibe over music and
-        dev stuff? Drop a message — I’m always open to collaborating or
+        dev stuff? Drop a message — I`&apos;`m always open to collaborating or
         chatting.
       </p>
 
