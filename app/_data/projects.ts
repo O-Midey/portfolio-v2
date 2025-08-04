@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: "SimpleVoting DApp",
     description: "A decentralized Web3 voting application. Users can connect their wallet, vote 'Yes' or 'No', and view live voting results on-chain.",
     src: "https://res.cloudinary.com/daypv7q8r/image/upload/v1685146874/todo_osi50o.png",
-    technologies: ["Solidity", "Next.js", "Ether.js", "Tailwind CSS"],
+    technologies: ["Solidity", "Typescript", "Next.js", "Ether.js", "Tailwind CSS", "React Toast"],
     projectLink: "https://todo-l86m.vercel.app/",
   },
   {
