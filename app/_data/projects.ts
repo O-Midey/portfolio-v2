@@ -27,6 +27,14 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    title: "SimpleVoting DApp",
+    description: "A decentralized Web3 voting application. Users can connect their wallet, vote 'Yes' or 'No', and view live voting results on-chain.",
+    src: "https://res.cloudinary.com/daypv7q8r/image/upload/v1685146874/todo_osi50o.png",
+    technologies: ["Solidity", "Next.js", "Ether.js", "Tailwind CSS"],
+    projectLink: "https://todo-l86m.vercel.app/",
+  },
+  {
+    id: 4,
     title: "quotes generator",
     description: "an app that generates random quotes on click.",
     src: "https://res.cloudinary.com/daypv7q8r/image/upload/v1685146874/quotes_l3uchl.png",
@@ -34,7 +42,7 @@ export const projects: Project[] = [
     projectLink: "https://quotes-generator-inky.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "shopping cart",
     description: "a simple shopping cart CRUD app.",
     src: "https://res.cloudinary.com/daypv7q8r/image/upload/v1687427229/shopping-cart_k0bm9j.png",
@@ -42,7 +50,7 @@ export const projects: Project[] = [
     projectLink: "https://shopping-cart-zeta-one.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "E-Commerce Website",
     description: "A multipurpose online shopping store",
     src: "https://res.cloudinary.com/daypv7q8r/image/upload/v1752805292/Screenshot_2025-07-18_at_03.16.51_peieza.png",
