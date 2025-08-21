@@ -2,14 +2,16 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "./_components/Navbar";
 import type { Metadata } from "next";
+import Layout from "./_components/Layout";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Omotosho David",
-  description: "Frontend Developer Portfolio",
+export const metadata = {
+  title: "Omotosho David ",
+  description: "Full-Stack Developer & Blockchain Engineer",
 };
 
 export default function RootLayout({
@@ -18,10 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.className}>
-      <body className="bg-black text-white mx-5 my-5 md:mx-10 md:my-10 font-poppins h-screen">
-        <Navbar />
-        <main>{children}</main>
+    <html lang="en">
+      <body>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

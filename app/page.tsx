@@ -1,88 +1,68 @@
-"use client";
-import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Instagram, ArrowRight } from "lucide-react";
-import Link from "next/link";
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Instagram,
+  ArrowRight,
+  Code,
+  Star,
+  Briefcase,
+} from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen w-full md:max-w-[75%] mx-auto overflow-hidden flex items-center">
-      <motion.div
-        className="px-2 md:px-15 max-w-5xl mx-auto w-full"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <motion.h1 className="text-gray-300 text-sm md:text-base tracking-widest uppercase mb-4">
-          Hi, my name is
-        </motion.h1>
-        <br />
-        <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-6">
-          Omotosho David A.
-        </h2>
-        <br />
-        <p className="text-gray-300 text-base md:text-lg leading-relaxed ">
-          I&apos;m a frontend developer who turns complex ideas into clean,
-          responsive interfaces using{" "}
-          <span className="text-[#06eecb]">React</span>,{" "}
-          <span className="text-[#06eecb]">Next.js</span>, and{" "}
-          <span className="text-[#06eecb]">Typescript</span>. When I&apos;m not
-          debugging codes, you&apos;ll probably find me obsessing over music releases
-          or brainstorming wild ideas for marketing rollouts. I like my UIs just
-          like my playlists; smooth, engaging, and impossible to skip.
-        </p>
-        <Link
-          href="/about"
-          className="group inline-flex items-center text-gray-300 my-10 animate-pulse hover:text-[#06eecb] duration-200 transition-all"
-        >
-          See more about me
-          <ArrowRight
-            className="ml-2 transition-transform space-x-6"
-            size={18}
-          />
-        </Link>
-        <div className="flex gap-10 mt-5 md:mt-12">
-          <Link
-            href="https://github.com/o-midey"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github
-              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
-              size={24}
-            />
-          </Link>
-          <Link
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Linkedin
-              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
-              size={24}
-            />
-          </Link>
-          <Link
-            href="https://twitter.com/meeedzy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Twitter
-              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
-              size={24}
-            />
-          </Link>
-          <Link
-            href="https://instagram.com/thismidey"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Instagram
-              className="text-gray-400 hover:text-[#06eecb] transition duration-300"
-              size={24}
-            />
-          </Link>
+    <div className="space-y-8">
+      {/* Hero Section */}
+      <div className="text-center py-16">
+        <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
+          <span className="text-white font-bold text-2xl">OD</span>
         </div>
-      </motion.div>
-    </main>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Omotosho David A.
+        </h1>
+        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Full-Stack Developer & Blockchain Engineer
+        </p>
+        <div className="flex items-center justify-center gap-6 mb-12">
+          <a href="https://github.com/o-midey" target="_blank">
+            <Github />
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <Linkedin />
+          </a>
+          <a href="https://twitter.com/meeedzy" target="_blank">
+            <Twitter />
+          </a>
+          <a href="https://instagram.com/thismidey" target="_blank">
+            <Instagram />
+          </a>
+        </div>
+        <a
+          href="/about"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+        >
+          Learn More About Me <ArrowRight size={16} />
+        </a>
+      </div>
+
+      {/* Quick Stats */}
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
+          <Code className="text-blue-600 mx-auto mb-3" />
+          <h3 className="font-semibold">Full-Stack Development</h3>
+          <p className="text-sm text-gray-600">MERN stack development</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
+          <Star className="text-purple-600 mx-auto mb-3" />
+          <h3 className="font-semibold">Blockchain Development</h3>
+          <p className="text-sm text-gray-600">Smart Contracts & Web3</p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-6 text-center">
+          <Briefcase className="text-green-600 mx-auto mb-3" />
+          <h3 className="font-semibold">End-to-End Solutions</h3>
+          <p className="text-sm text-gray-600">From DB to Smart Contracts</p>
+        </div>
+      </div>
+    </div>
   );
 }
