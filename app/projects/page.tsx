@@ -4,7 +4,7 @@ import { projects } from "../_data/projects";
 function ProjectsSection() {
   return (
     <section className="space-y-6">
-      <h2 className="text-2xl font-bold text-gray-900">Projects</h2>
+      <h2 className="text-2xl font-bold  text-gray-900">Projects</h2>
       <div className="space-y-6">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
