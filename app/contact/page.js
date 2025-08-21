@@ -11,7 +11,7 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Let`&apos;`s Connect.
+        Let&apos;`s Connect.
       </motion.h1>
 
       <p className="text-gray-400 mb-10">
