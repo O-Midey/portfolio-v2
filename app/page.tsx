@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen w-full md:max-w-[75%] mx-auto overflow-hidden flex items-center">
       <motion.div
-        className="px-2 md:px-20 max-w-5xl mx-auto w-full"
+        className="px-2 md:px-15 max-w-5xl mx-auto w-full"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
