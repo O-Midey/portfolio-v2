@@ -13,7 +13,7 @@ export default function About() {
         className="mb-12 text-gray-300"
       >
         <p>
-          I`&apos;`m Omotosho Ayomide, a passionate frontend developer with a
+          I&apos;m Omotosho Ayomide, a passionate frontend developer with a
           sharp eye for design and an obsession for clean, efficient code. My
           toolkit includes React, Next.js, and TypeScript, which I use to build
           scalable, responsive, and performance-focused web experiences.
@@ -21,14 +21,14 @@ export default function About() {
         <br />
         <p>
           Beyond the code, I have a genuine love for music and digital culture.
-          Whether it`&apos;`s analyzing album rollouts or brainstorming unique
+          Whether it&apos;s analyzing album rollouts or brainstorming unique
           ways to market a new track, I bring a creative, cross-disciplinary
           edge to everything I do.
         </p>
         <br />
         <p>
           I believe great user interfaces are like great songs — they flow, feel
-          natural, and leave a lasting impression. That`&apos;`s the kind of
+          natural, and leave a lasting impression. That&apos;s the kind of
           experience I aim to build: intuitive, impactful, and impossible to
           ignore.
         </p>
