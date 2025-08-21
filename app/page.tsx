@@ -14,9 +14,6 @@ export default function HomePage() {
     <div className="space-y-8">
       {/* Hero Section */}
       <div className="text-center py-16">
-        <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
-          <span className="text-white font-bold text-2xl">OD</span>
-        </div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Omotosho David A.
         </h1>
@@ -39,9 +36,13 @@ export default function HomePage() {
         </div>
         <a
           href="/about"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+          className="group inline-flex items-center gap-2 px-6 py-3 bg-black text-white rounded-lg hover:opacity-85 transition-all duration-300 font-medium"
         >
-          Learn More About Me <ArrowRight size={16} />
+          Learn More About Me
+          <ArrowRight
+            className="transform transition-transform duration-300 animate-pulse group-hover:translate-x-2"
+            size={16}
+          />
         </a>
       </div>
 

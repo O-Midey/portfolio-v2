@@ -1,45 +1,72 @@
 import { skills } from "../_data/skills";
 import PropertyItem from "../_components/PropertyItem";
-import { MapPin, Mail, Star, Calendar } from "lucide-react";
+import { MapPin, Mail, Star } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 max-w-3xl mx-auto">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
+      <div className=" rounded-xl ">
+        <h1 className="text-2xl md:text-3xl mb-6 font-bold text-gray-900">
           Full-Stack Developer & Blockchain Engineer
         </h1>
-        <p className="text-gray-600 text-lg leading-relaxed mb-6">
-          I'm a full-stack developer who builds end-to-end solutions using the{" "}
-          <span className="font-semibold text-blue-600">MERN stack</span> and
-          creates decentralized applications with{" "}
+        <p className="text-gray-600 text-md md:text-lg my-10">
+          I&apos;m a full-stack developer who builds end-to-end solutions using
+          the <span className="font-semibold text-blue-600">MERN stack</span>{" "}
+          and creates decentralized applications with{" "}
           <span className="font-semibold text-purple-600">Solidity</span>,{" "}
           <span className="font-semibold text-purple-600">Hardhat</span>, and{" "}
           <span className="font-semibold text-purple-600">Ethers.js</span>. From
           database design to smart contracts, I deliver complete solutions that
-          bridge traditional web development with blockchain technology.
+          bridge traditional web development with blockchain technology. I
+          approach every project with precision and creativity, whether I&apos;m
+          architecting scalable databases or writing secure smart contracts.
+          Each line of code is an opportunity to build something meaningful that
+          users will love. When I&apos;m not coding, I&apos;m usually vibing to
+          some good Afrobeats. There&apos;s something about the energy that
+          keeps me motivated during those late-night development sessions.
+          <br />
+          <br />
+          You can check out my playlist{" "}
+          <a
+            className="text-blue-700"
+            target="_blank"
+            href="https://open.spotify.com/user/31jibew2j4bcfy3edf6ezxorcbxu/playlists"
+          >
+            here 😉
+          </a>
         </p>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill) => (
             <span
               key={skill}
-              className="px-3 py-1 bg-white text-gray-700 text-sm rounded-full shadow-sm"
+              className="px-3 py-1 font-mono bg-white text-gray-700 text-sm rounded-full shadow-sm"
             >
               {skill}
             </span>
           ))}
         </div>
-      </div>
 
-      {/* Properties */}
-      <div className="bg-gray-50 rounded-lg p-6">
-        <h2 className="font-semibold text-gray-900 mb-4">Information</h2>
-        <div className="space-y-2">
-          <PropertyItem label="Location" value="Lagos, Nigeria" icon={MapPin} />
-          <PropertyItem label="Email" value="david@example.com" icon={Mail} />
-          <PropertyItem label="Status" value="Available for work" icon={Star} />
-          <PropertyItem label="Joined" value="2022" icon={Calendar} />
+        {/* Properties */}
+        <div className="bg-gray-50 rounded-lg p-6 mt-10">
+          <h2 className="font-semibold text-gray-900 mb-4">Information</h2>
+          <div className="space-y-2">
+            <PropertyItem
+              label="Location"
+              value="Lagos, Nigeria"
+              icon={MapPin}
+            />
+            <PropertyItem
+              label="Email"
+              value="talk2adeoluwa2310@gmail.com"
+              icon={Mail}
+            />
+            <PropertyItem
+              label="Status"
+              value="Available for work"
+              icon={Star}
+            />
+          </div>
         </div>
       </div>
     </div>

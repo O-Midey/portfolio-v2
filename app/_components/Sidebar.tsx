@@ -8,7 +8,7 @@ import SidebarItem from "../_components/SidebarItem";
 export default function Sidebar() {
   const pathname = usePathname();
   return (
-    <div className="w-64 flex-shrink-0 sticky top-24">
+    <div className="w-64 hidden md:flex flex-shrink-0 sticky top-24">
       <nav className="space-y-1">
         {sections.map((section) => (
           <Link key={section.id} href={section.href}>

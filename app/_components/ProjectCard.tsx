@@ -1,4 +1,6 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLinkIcon } from "lucide-react";
+
+import { motion } from "framer-motion";
 
 interface Project {
   title: string;
@@ -30,7 +32,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.tech.map((tech) => (
           <span
             key={tech}
-            className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded"
+            className="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-mono rounded"
           >
             {tech}
           </span>
@@ -42,7 +44,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         rel="noopener noreferrer"
         className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm"
       >
-        View Project <ExternalLink size={12} />
+        View Project <ExternalLinkIcon size={12} />
       </a>
     </div>
   );
