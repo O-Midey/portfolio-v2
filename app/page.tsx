@@ -21,12 +21,12 @@ export default function Home() {
         </h2>
         <br />
         <p className="text-gray-300 text-base md:text-lg leading-relaxed ">
-          I'm a frontend developer who turns complex ideas into clean,
+          I&apos;m a frontend developer who turns complex ideas into clean,
           responsive interfaces using{" "}
           <span className="text-[#06eecb]">React</span>,{" "}
           <span className="text-[#06eecb]">Next.js</span>, and{" "}
-          <span className="text-[#06eecb]">Typescript</span>. When I'm not
-          debugging codes, you'll probably find me obsessing over music releases
+          <span className="text-[#06eecb]">Typescript</span>. When I&apos;m not
+          debugging codes, you&apos;ll probably find me obsessing over music releases
           or brainstorming wild ideas for marketing rollouts. I like my UIs just
           like my playlists; smooth, engaging, and impossible to skip.
         </p>
