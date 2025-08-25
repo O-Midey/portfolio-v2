@@ -1,8 +1,10 @@
-export default function SidebarItem({
+import { section } from "../types/types";
+
+export default function NavItem({
   section,
   isActive,
 }: {
-  section: any;
+  section: section;
   isActive: boolean;
 }) {
   const Icon = section.icon;

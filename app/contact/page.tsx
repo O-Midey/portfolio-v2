@@ -1,8 +1,9 @@
-import { Mail, Twitter } from "lucide-react";
+import { Instagram, Mail, Twitter } from "lucide-react";
+import AnimatedDiv from "../_components/AnimatedDiv";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-12 px-4 sm:px-6 lg:px-8">
+    <AnimatedDiv id="contact" className="py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
           Get in Touch
@@ -25,7 +26,7 @@ export default function Contact() {
               <div>
                 <div className="font-semibold text-gray-900">Email</div>
                 <div className="text-gray-600 text-sm break-all">
-                  david@example.com
+                  talk2adeoluwa2310@gmail.com
                 </div>
               </div>
             </a>
@@ -40,9 +41,19 @@ export default function Contact() {
                 <div className="text-gray-600 text-sm">@meeedzy</div>
               </div>
             </a>
+            <a
+              href="https://instagram.com/thismidey"
+              className="flex items-center gap-3 p-4 bg-white rounded-lg border hover:shadow-md transition-shadow"
+            >
+              <Instagram size={20} className="text-black shrink-0" />
+              <div>
+                <div className="font-semibold text-gray-900">Instagram</div>
+                <div className="text-gray-600 text-sm">@thismidey</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedDiv>
   );
 }

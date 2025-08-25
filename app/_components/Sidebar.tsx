@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import sections from "../_data/sections";
-import SidebarItem from "../_components/SidebarItem";
+import NavItem from "./NavItem";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -12,10 +12,7 @@ export default function Sidebar() {
       <nav className="space-y-1">
         {sections.map((section) => (
           <Link key={section.id} href={section.href}>
-            <SidebarItem
-              section={section}
-              isActive={pathname === section.href}
-            />
+            <NavItem section={section} isActive={pathname === section.href} />
           </Link>
         ))}
       </nav>

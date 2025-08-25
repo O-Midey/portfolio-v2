@@ -8,10 +8,11 @@ import {
   Star,
   Briefcase,
 } from "lucide-react";
+import AnimatedDiv from "./_components/AnimatedDiv";
 
 export default function HomePage() {
   return (
-    <div className="space-y-8">
+    <AnimatedDiv className="space-y-8">
       {/* Hero Section */}
       <div className="text-center py-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -64,6 +65,6 @@ export default function HomePage() {
           <p className="text-sm text-gray-600">From DB to Smart Contracts</p>
         </div>
       </div>
-    </div>
+    </AnimatedDiv>
   );
 }

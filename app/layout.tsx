@@ -1,14 +1,9 @@
 import "./globals.css";
-import { Poppins } from "next/font/google";
-import Navbar from "./_components/Navbar";
-import type { Metadata } from "next";
 import Layout from "./_components/Layout";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
+const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Omotosho David ",
   description: "Full-Stack Developer & Blockchain Engineer",
@@ -20,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body>
         <Layout>{children}</Layout>
       </body>

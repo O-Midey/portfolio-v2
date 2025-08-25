@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  serverExternalPackages: ["framer-motion"],
   images: {
     domains: ["res.cloudinary.com", "asset.cloudinary.com"],
   },
 };
-
-module.exports = nextConfig;
 
 export default nextConfig;

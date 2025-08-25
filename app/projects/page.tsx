@@ -16,7 +16,7 @@ function ProjectsSection() {
 
 export default function Projects() {
   return (
-    <main className="container mx-auto px-6 py-12">
+    <main className="container mx-auto py-10">
       <ProjectsSection />
     </main>
   );

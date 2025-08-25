@@ -1,6 +1,5 @@
 import { ExternalLinkIcon } from "lucide-react";
-
-import { motion } from "framer-motion";
+import AnimatedDiv from "./AnimatedDiv";
 
 interface Project {
   title: string;
@@ -12,7 +11,12 @@ interface Project {
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="w-full border border-gray-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow duration-200">
+    <AnimatedDiv
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="w-full border border-gray-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow duration-200"
+    >
       <div className="flex items-start justify-between mb-3">
         <h3 className="font-semibold text-gray-900">{project.title}</h3>
         <div
@@ -46,6 +50,6 @@ export default function ProjectCard({ project }: { project: Project }) {
       >
         View Project <ExternalLinkIcon size={12} />
       </a>
-    </div>
+    </AnimatedDiv>
   );
 }
